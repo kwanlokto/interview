@@ -27,3 +27,20 @@ Design a Python wrapper class that:
 - **Error handling** - essential for DLL work where things fail often
 - **Input validation** - needed when passing data to external libraries
 - **Abstraction** - hiding complexity, which you do constantly with DLLs
+
+### Follow-up Questions
+- "How would you handle a situation where the external library is slow?"
+- "What if you needed to add logging to track all operations?"
+- "How would you write tests for this wrapper?"
+
+### Red Flags
+- No error handling
+- Doesn't validate inputs
+- Just passes through without adding value
+- Can't explain design decisions
+
+### Green Flags
+- Thinks about edge cases (divide by zero)
+- Validates inputs before calling external code
+- Creates a cleaner, more intuitive interface
+- Considers error messages that help users debug
