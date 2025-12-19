@@ -1,8 +1,12 @@
-"""
+from api_wrapper.calculator.__api import ExternalCalculator
+
+
+
+class Calculator:
+    """
 Any solution can do the job, but this one is designed to be robust and handle edge cases.
 It wraps around an external calculator library to provide basic arithmetic operations
 """
-class Calculator:
     def __init__(self):
         self._calc = ExternalCalculator()
     
