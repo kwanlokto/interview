@@ -26,3 +26,49 @@ Explanation: The string is already balanced.
 
 def min_swaps(s: str) -> int:
     return 0
+
+
+# Basic cases
+assert min_swaps("()") == 0
+assert min_swaps(")(") == 1
+
+# Impossible cases
+assert min_swaps("(") == -1
+assert min_swaps(")") == -1
+assert min_swaps("(()") == -1
+assert min_swaps("())") == -1
+assert min_swaps("(((") == -1
+
+# Simple imbalanced cases
+assert min_swaps(")()(") == 1
+assert min_swaps("())(") == 1
+assert min_swaps("))((") == 1
+assert min_swaps(")()()(") == 1
+assert min_swaps("())(()") == 1
+
+# Multiple swaps needed
+assert min_swaps(")))(((") == 2
+assert min_swaps("))))((((") == 2
+
+# Already balanced
+assert min_swaps("(())") == 0
+assert min_swaps("()()") == 0
+assert min_swaps("(()(()))") == 0
+assert min_swaps("((()))") == 0
+
+# Complex cases
+assert min_swaps("())(())(") == 1
+assert min_swaps(")()())((") == 1
+assert min_swaps(")(()))((") == 1
+assert min_swaps("))()(()(") == 1
+assert min_swaps("()()))((") == 1
+
+# Edge cases
+assert min_swaps("") == 0
+assert min_swaps("()()()()") == 0
+assert min_swaps("))))))))((((((((") == 4
+
+# Longer sequences
+assert min_swaps("()())()(") == 1
+assert min_swaps("()(()))(") == 1
+assert min_swaps(")))()(((") == 2
