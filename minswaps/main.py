@@ -1,6 +1,6 @@
 """
 Problem Description
-Given a string s containing only the characters '(' and ')', return the minimum number of adjacent swaps needed to make the string balanced. If it's impossible to balance the string, return -1.
+Given a string s containing only the characters '(' and ')', return the minimum number of swaps needed to make the string balanced. If it's impossible to balance the string, return -1.
 A string is balanced if:
 Every opening parenthesis '(' has a corresponding closing parenthesis ')'
 At no point while reading left to right does the count of closing parentheses exceed the count of opening parentheses
