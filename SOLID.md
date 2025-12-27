@@ -27,7 +27,7 @@
 ## I — Interface Segregation Principle
 - Clients should not be forced to depend on interfaces they do not use
 
-**So:**
+**In practice:**
 - Prefer many small, focused interfaces
 - Avoid "fat" interfaces
 
