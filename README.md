@@ -8,18 +8,7 @@ These questions test problem-solving, APIs, data structures, and debugging skill
 
 ## Repository Structure
 
-### 📁 [GLOBALREADME.md](GLOBALREADME.md)
-Comprehensive interview guide containing:
-- 6 core interview questions with detailed scenarios
-- Expected solutions and evaluation criteria
-- Red flags and green flags for assessment
-- Follow-up questions for deeper evaluation
-- Practical coding exercise combining multiple concepts
-
-### 📁 api_wrapper/
-Contains implemented solutions for the interview questions:
-
-#### 📁 third_party_library/
+### 📁 third_party_library/
 - **Question**: API Wrapper Design (20 minutes)
 - **Focus**: API design, error handling, input validation, abstraction
 - **Files**:
@@ -27,7 +16,7 @@ Contains implemented solutions for the interview questions:
   - [solution.py](third_party_library/solution.py) - Robust calculator wrapper implementation
   - [hidden_api.py](third_party_library/hidden_api.py) - External calculator interface stub
 
-#### 📁 flask/
+### 📁 flask/
 - **Question**: Simple REST API (25 minutes)
 - **Focus**: Flask basics, RESTful design, state management, JSON handling
 - **Files**:
