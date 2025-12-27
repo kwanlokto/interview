@@ -19,13 +19,13 @@ Comprehensive interview guide containing:
 ### 📁 api_wrapper/
 Contains implemented solutions for the interview questions:
 
-#### 📁 calculator/
+#### 📁 third_party_library/
 - **Question**: API Wrapper Design (20 minutes)
 - **Focus**: API design, error handling, input validation, abstraction
 - **Files**:
-  - [README.md](api_wrapper/calculator/README.md) - Question details and evaluation criteria
-  - [solution.py](api_wrapper/calculator/solution.py) - Robust calculator wrapper implementation
-  - [__api.py](api_wrapper/calculator/__api.py) - External calculator interface stub
+  - [README.md](third_party_library/README.md) - Question details and evaluation criteria
+  - [solution.py](third_party_library/solution.py) - Robust calculator wrapper implementation
+  - [hidden_api.py](third_party_library/hidden_api.py) - External calculator interface stub
 
 #### 📁 flask/
 - **Question**: Simple REST API (25 minutes)
