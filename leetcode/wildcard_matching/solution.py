@@ -14,11 +14,11 @@ def is_wildcard_matching(s: str, p: str) -> bool:
 
             if p_char == s_char or p_char == "?":
                 dp[s_idx + 1][p_idx + 1] = dp[s_idx][p_idx]
-            
+
             elif p_char == "*":
                 dp[s_idx + 1][p_idx + 1] = (
-                    dp[s_idx + 1][p_idx] or  # match 0 characters
-                    dp[s_idx][p_idx + 1]  # match >= 1 characters
+                    dp[s_idx + 1][p_idx]  # match 0 characters
+                    or dp[s_idx][p_idx + 1]  # match >= 1 characters
                 )
 
     return dp[len(s)][len(p)]

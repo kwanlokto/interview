@@ -5,7 +5,7 @@ Given an input string (s) and a pattern (p), implement wildcard pattern matching
 '*' Matches any sequence of characters (including the empty sequence).
 The matching should cover the entire input string (not partial).
 
- 
+
 
 Example 1:
 
@@ -24,10 +24,12 @@ Output: false
 Explanation: '?' matches 'c', but the second letter is 'a', which does not match 'b'.
 """
 
+
 def wildcard_matching(s: str, p: str) -> bool:
     return False
 
+
 assert wildcard_matching("aa", "a") == False
-assert wildcard_matching("aa", "*") == True 
+assert wildcard_matching("aa", "*") == True
 assert wildcard_matching("cb", "?a") == False
 assert wildcard_matching("adceb", "*a*b") == True

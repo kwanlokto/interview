@@ -5,6 +5,7 @@ a* -> no a, 1+ a
 
 """
 
+
 def is_regex_matching(s: str, p: str) -> bool:
     # dp[i][j] = does s[:i] match p[:j]
     dp = [[False] * (len(p) + 1) for _ in range(len(s) + 1)]

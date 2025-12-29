@@ -5,7 +5,7 @@ Given an input string s and a pattern p, implement regular expression matching w
 '*' Matches zero or more of the preceding element.
 The matching should cover the entire input string (not partial).
 
- 
+
 
 Example 1:
 
@@ -24,8 +24,10 @@ Output: true
 Explanation: ".*" means "zero or more (*) of any character (.)".
 """
 
+
 def is_regex_matching(s: str, p: str) -> bool:
     return False
+
 
 assert is_regex_matching("aa", "a") == False
 assert is_regex_matching("aa", "a*") == True

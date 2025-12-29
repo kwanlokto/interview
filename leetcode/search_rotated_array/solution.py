@@ -18,5 +18,4 @@ def search(nums: list[int], target: int) -> int:
             else:
                 high = mid - 1
 
-
     return -1

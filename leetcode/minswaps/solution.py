@@ -1,5 +1,6 @@
 import math
 
+
 def min_swaps(s: str) -> int:
     # Check if balancing is possible
     balance = 0
