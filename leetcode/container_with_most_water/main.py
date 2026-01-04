@@ -17,3 +17,11 @@ Input: height = [1,1]
 Output: 1
 Explanation: The above vertical lines are represented by array [1,1]. In this case, the max area of water (blue section) the container can contain is 1.
 """
+
+def max_area(height: list[int]) -> int:
+    return 0
+
+assert max_area([1,8,6,2,5,4,8,3,7]) == 49
+assert max_area([1,1]) == 1
+assert max_area([4,3,2,1,4]) == 16
+assert max_area([1,2,1]) == 2
